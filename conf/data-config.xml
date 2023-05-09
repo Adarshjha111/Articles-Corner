@@ -1,0 +1,25 @@
+<dataConfig>
+  <dataSource type="JdbcDataSource" 
+              driver="com.mysql.jdbc.Driver" 
+              url="jdbc:mydb://172.17.0.1:3306/cake_blog"
+              user="root" 
+              password="admin" />
+  <document>
+    <entity name="articles" pk="id"
+            query="SELECT a.id, a.title, a.body, a.category_id, a.created, a.modified, a.filename, a.email, c.name as category_name FROM articles a JOIN categories c ON a.category_id = c.id">
+      <field column="id" name="id" />
+      <field column="title" name="title" />
+      <field column="body" name="body" />
+      <field column="category_id" name="category_id" />
+      <field column="created" name="created" />
+      <field column="modified" name="modified" />
+      <field column="filename" name="filename" />
+      <field column="email" name="email" />
+      <field column="category_name" name="category_name" />
+    </entity>
+  </document>
+</dataConfig>
+
+
+
+

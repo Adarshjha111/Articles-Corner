@@ -1,0 +1,669 @@
+2023-04-15 04:55:10.522 INFO  (main) [   ] o.e.j.u.log Logging initialized @167ms
+2023-04-15 04:55:10.617 INFO  (main) [   ] o.e.j.s.Server jetty-9.2.13.v20150730
+2023-04-15 04:55:10.626 WARN  (main) [   ] o.e.j.s.h.RequestLogHandler !RequestLog
+2023-04-15 04:55:10.627 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:/home/adarsh/solr-5.5.0/server/contexts/] at interval 0
+2023-04-15 04:55:10.834 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2023-04-15 04:55:10.840 WARN  (main) [   ] o.e.j.s.SecurityHandler ServletContext@o.e.j.w.WebAppContext@1794d431{/solr,file:/home/adarsh/solr-5.5.0/server/solr-webapp/webapp/,STARTING}{/home/adarsh/solr-5.5.0/server/solr-webapp/webapp} has uncovered http methods for path: /
+2023-04-15 04:55:10.846 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init(): WebAppClassLoader=1121647253@42dafa95
+2023-04-15 04:55:10.855 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2023-04-15 04:55:10.855 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /home/adarsh/solr-5.5.0/server/solr
+2023-04-15 04:55:10.856 INFO  (main) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/home/adarsh/solr-5.5.0/server/solr'
+2023-04-15 04:55:10.856 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2023-04-15 04:55:10.856 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /home/adarsh/solr-5.5.0/server/solr
+2023-04-15 04:55:10.859 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/adarsh/solr-5.5.0/server/solr/solr.xml
+2023-04-15 04:55:10.898 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Config-defined core root directory: /home/adarsh/solr-5.5.0/server/solr
+2023-04-15 04:55:10.911 INFO  (main) [   ] o.a.s.c.CoreContainer New CoreContainer 300031246
+2023-04-15 04:55:10.911 INFO  (main) [   ] o.a.s.c.CoreContainer Loading cores into CoreContainer [instanceDir=/home/adarsh/solr-5.5.0/server/solr]
+2023-04-15 04:55:10.911 WARN  (main) [   ] o.a.s.c.CoreContainer Couldn't add files from /home/adarsh/solr-5.5.0/server/solr/lib to classpath: /home/adarsh/solr-5.5.0/server/solr/lib
+2023-04-15 04:55:10.917 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory created with socketTimeout : 600000,connTimeout : 60000,maxConnectionsPerHost : 20,maxConnections : 10000,corePoolSize : 0,maximumPoolSize : 2147483647,maxThreadIdleTime : 5,sizeOfQueue : -1,fairnessPolicy : false,useRetries : false,
+2023-04-15 04:55:11.034 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2023-04-15 04:55:11.036 INFO  (main) [   ] o.a.s.l.LogWatcher SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+2023-04-15 04:55:11.036 INFO  (main) [   ] o.a.s.l.LogWatcher Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+2023-04-15 04:55:11.037 INFO  (main) [   ] o.a.s.c.CoreContainer Security conf doesn't exist. Skipping setup for authorization module.
+2023-04-15 04:55:11.037 INFO  (main) [   ] o.a.s.c.CoreContainer No authentication plugin used.
+2023-04-15 04:55:11.055 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Looking for core definitions underneath /home/adarsh/solr-5.5.0/server/solr
+2023-04-15 04:55:11.057 INFO  (main) [   ] o.a.s.c.CoreDescriptor Created CoreDescriptor: {name=newcore, config=solrconfig.xml, loadOnStartup=true, schema=schema.xml, configSetProperties=configsetprops.json, transient=false, dataDir=data/}
+2023-04-15 04:55:11.057 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found core newcore in /home/adarsh/solr-5.5.0/server/solr/newcore
+2023-04-15 04:55:11.058 INFO  (main) [   ] o.a.s.c.CoreDescriptor Created CoreDescriptor: {name=thirdcore, config=solrconfig.xml, loadOnStartup=true, schema=schema.xml, configSetProperties=configsetprops.json, transient=false, dataDir=data/}
+2023-04-15 04:55:11.058 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found core thirdcore in /home/adarsh/solr-5.5.0/server/solr/thirdcore
+2023-04-15 04:55:11.058 INFO  (main) [   ] o.a.s.c.CoreDescriptor Created CoreDescriptor: {name=second_core, config=solrconfig.xml, loadOnStartup=true, schema=schema.xml, configSetProperties=configsetprops.json, transient=false, dataDir=data/}
+2023-04-15 04:55:11.058 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found core second_core in /home/adarsh/solr-5.5.0/server/solr/second_core
+2023-04-15 04:55:11.059 INFO  (main) [   ] o.a.s.c.CoreDescriptor Created CoreDescriptor: {name=firstCore, config=solrconfig.xml, loadOnStartup=true, schema=schema.xml, configSetProperties=configsetprops.json, transient=false, dataDir=data/}
+2023-04-15 04:55:11.059 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found core firstCore in /home/adarsh/solr-5.5.0/server/solr/firstCore
+2023-04-15 04:55:11.062 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 4 core definitions
+2023-04-15 04:55:11.065 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter user.dir=/home/adarsh/solr-5.5.0/server
+2023-04-15 04:55:11.065 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init() done
+2023-04-15 04:55:11.065 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/home/adarsh/solr-5.5.0/server/solr/thirdcore'
+2023-04-15 04:55:11.065 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/home/adarsh/solr-5.5.0/server/solr/second_core'
+2023-04-15 04:55:11.065 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2023-04-15 04:55:11.065 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/home/adarsh/solr-5.5.0/server/solr/newcore'
+2023-04-15 04:55:11.065 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2023-04-15 04:55:11.066 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2023-04-15 04:55:11.065 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /home/adarsh/solr-5.5.0/server/solr
+2023-04-15 04:55:11.066 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /home/adarsh/solr-5.5.0/server/solr
+2023-04-15 04:55:11.066 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /home/adarsh/solr-5.5.0/server/solr
+2023-04-15 04:55:11.075 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@1794d431{/solr,file:/home/adarsh/solr-5.5.0/server/solr-webapp/webapp/,AVAILABLE}{/home/adarsh/solr-5.5.0/server/solr-webapp/webapp}
+2023-04-15 04:55:11.113 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig current version of requestparams : 0
+2023-04-15 04:55:11.113 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrConfig current version of requestparams : 0
+2023-04-15 04:55:11.113 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig current version of requestparams : 0
+2023-04-15 04:55:11.116 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Adding specified lib dirs to ClassLoader
+2023-04-15 04:55:11.116 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Adding specified lib dirs to ClassLoader
+2023-04-15 04:55:11.117 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrConfig Adding specified lib dirs to ClassLoader
+2023-04-15 04:55:11.122 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/jmatio-1.0.jar' to classloader
+2023-04-15 04:55:11.122 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/jmatio-1.0.jar' to classloader
+2023-04-15 04:55:11.122 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/jmatio-1.0.jar' to classloader
+2023-04-15 04:55:11.122 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+2023-04-15 04:55:11.122 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+2023-04-15 04:55:11.122 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+2023-04-15 04:55:11.122 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+2023-04-15 04:55:11.122 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/jdom-1.0.jar' to classloader
+2023-04-15 04:55:11.122 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+2023-04-15 04:55:11.122 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+2023-04-15 04:55:11.122 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+2023-04-15 04:55:11.122 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+2023-04-15 04:55:11.122 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/jdom-1.0.jar' to classloader
+2023-04-15 04:55:11.122 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/tika-xmp-1.7.jar' to classloader
+2023-04-15 04:55:11.122 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/jdom-1.0.jar' to classloader
+2023-04-15 04:55:11.123 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/isoparser-1.0.2.jar' to classloader
+2023-04-15 04:55:11.122 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+2023-04-15 04:55:11.123 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/icu4j-54.1.jar' to classloader
+2023-04-15 04:55:11.123 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+2023-04-15 04:55:11.123 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+2023-04-15 04:55:11.123 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+2023-04-15 04:55:11.123 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/vorbis-java-core-0.6.jar' to classloader
+2023-04-15 04:55:11.123 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+2023-04-15 04:55:11.123 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/tika-core-1.7.jar' to classloader
+2023-04-15 04:55:11.123 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/tika-xmp-1.7.jar' to classloader
+2023-04-15 04:55:11.123 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/rome-1.0.jar' to classloader
+2023-04-15 04:55:11.123 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/tika-xmp-1.7.jar' to classloader
+2023-04-15 04:55:11.123 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+2023-04-15 04:55:11.123 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/isoparser-1.0.2.jar' to classloader
+2023-04-15 04:55:11.123 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+2023-04-15 04:55:11.123 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/isoparser-1.0.2.jar' to classloader
+2023-04-15 04:55:11.123 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/fontbox-1.8.8.jar' to classloader
+2023-04-15 04:55:11.123 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/icu4j-54.1.jar' to classloader
+2023-04-15 04:55:11.124 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+2023-04-15 04:55:11.124 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/icu4j-54.1.jar' to classloader
+2023-04-15 04:55:11.124 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/tika-java7-1.7.jar' to classloader
+2023-04-15 04:55:11.124 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+2023-04-15 04:55:11.124 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+2023-04-15 04:55:11.124 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+2023-04-15 04:55:11.124 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/xz-1.5.jar' to classloader
+2023-04-15 04:55:11.124 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/vorbis-java-core-0.6.jar' to classloader
+2023-04-15 04:55:11.124 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/vorbis-java-tika-0.6.jar' to classloader
+2023-04-15 04:55:11.124 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/vorbis-java-core-0.6.jar' to classloader
+2023-04-15 04:55:11.124 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/jempbox-1.8.8.jar' to classloader
+2023-04-15 04:55:11.124 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/tika-core-1.7.jar' to classloader
+2023-04-15 04:55:11.124 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/tika-parsers-1.7.jar' to classloader
+2023-04-15 04:55:11.124 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/tika-core-1.7.jar' to classloader
+2023-04-15 04:55:11.124 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/poi-ooxml-3.11.jar' to classloader
+2023-04-15 04:55:11.124 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/rome-1.0.jar' to classloader
+2023-04-15 04:55:11.124 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+2023-04-15 04:55:11.124 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/rome-1.0.jar' to classloader
+2023-04-15 04:55:11.124 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/poi-ooxml-schemas-3.11.jar' to classloader
+2023-04-15 04:55:11.124 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+2023-04-15 04:55:11.125 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/pdfbox-1.8.8.jar' to classloader
+2023-04-15 04:55:11.125 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+2023-04-15 04:55:11.125 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/poi-3.11.jar' to classloader
+2023-04-15 04:55:11.125 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+2023-04-15 04:55:11.125 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/poi-scratchpad-3.11.jar' to classloader
+2023-04-15 04:55:11.125 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+2023-04-15 04:55:11.125 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/commons-compress-1.8.1.jar' to classloader
+2023-04-15 04:55:11.125 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/fontbox-1.8.8.jar' to classloader
+2023-04-15 04:55:11.125 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/java-libpst-0.8.1.jar' to classloader
+2023-04-15 04:55:11.125 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/fontbox-1.8.8.jar' to classloader
+2023-04-15 04:55:11.125 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/aspectjrt-1.8.0.jar' to classloader
+2023-04-15 04:55:11.125 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+2023-04-15 04:55:11.125 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+2023-04-15 04:55:11.125 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+2023-04-15 04:55:11.125 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/dist/solr-cell-5.5.0.jar' to classloader
+2023-04-15 04:55:11.125 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/tika-java7-1.7.jar' to classloader
+2023-04-15 04:55:11.126 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/clustering/lib/simple-xml-2.7.1.jar' to classloader
+2023-04-15 04:55:11.125 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/tika-java7-1.7.jar' to classloader
+2023-04-15 04:55:11.126 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/clustering/lib/carrot2-guava-18.0.jar' to classloader
+2023-04-15 04:55:11.126 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+2023-04-15 04:55:11.126 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/clustering/lib/jackson-annotations-2.5.4.jar' to classloader
+2023-04-15 04:55:11.126 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+2023-04-15 04:55:11.126 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/clustering/lib/carrot2-mini-3.10.4.jar' to classloader
+2023-04-15 04:55:11.126 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/xz-1.5.jar' to classloader
+2023-04-15 04:55:11.126 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/clustering/lib/attributes-binder-1.2.3.jar' to classloader
+2023-04-15 04:55:11.126 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/xz-1.5.jar' to classloader
+2023-04-15 04:55:11.126 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/clustering/lib/jackson-databind-2.5.4.jar' to classloader
+2023-04-15 04:55:11.126 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/vorbis-java-tika-0.6.jar' to classloader
+2023-04-15 04:55:11.126 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+2023-04-15 04:55:11.126 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/vorbis-java-tika-0.6.jar' to classloader
+2023-04-15 04:55:11.126 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+2023-04-15 04:55:11.126 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/jempbox-1.8.8.jar' to classloader
+2023-04-15 04:55:11.127 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/dist/solr-clustering-5.5.0.jar' to classloader
+2023-04-15 04:55:11.127 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/jempbox-1.8.8.jar' to classloader
+2023-04-15 04:55:11.127 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+2023-04-15 04:55:11.127 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/tika-parsers-1.7.jar' to classloader
+2023-04-15 04:55:11.127 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+2023-04-15 04:55:11.127 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/tika-parsers-1.7.jar' to classloader
+2023-04-15 04:55:11.127 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/dist/solr-langid-5.5.0.jar' to classloader
+2023-04-15 04:55:11.127 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/poi-ooxml-3.11.jar' to classloader
+2023-04-15 04:55:11.127 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+2023-04-15 04:55:11.127 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/poi-ooxml-3.11.jar' to classloader
+2023-04-15 04:55:11.127 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/velocity/lib/commons-collections-3.2.2.jar' to classloader
+2023-04-15 04:55:11.127 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+2023-04-15 04:55:11.127 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/velocity/lib/velocity-1.7.jar' to classloader
+2023-04-15 04:55:11.127 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+2023-04-15 04:55:11.127 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+2023-04-15 04:55:11.127 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/poi-ooxml-schemas-3.11.jar' to classloader
+2023-04-15 04:55:11.128 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/dist/solr-velocity-5.5.0.jar' to classloader
+2023-04-15 04:55:11.127 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/poi-ooxml-schemas-3.11.jar' to classloader
+2023-04-15 04:55:11.128 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/pdfbox-1.8.8.jar' to classloader
+2023-04-15 04:55:11.128 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/pdfbox-1.8.8.jar' to classloader
+2023-04-15 04:55:11.128 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/poi-3.11.jar' to classloader
+2023-04-15 04:55:11.128 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/poi-3.11.jar' to classloader
+2023-04-15 04:55:11.128 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/poi-scratchpad-3.11.jar' to classloader
+2023-04-15 04:55:11.128 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/poi-scratchpad-3.11.jar' to classloader
+2023-04-15 04:55:11.128 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/commons-compress-1.8.1.jar' to classloader
+2023-04-15 04:55:11.128 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/commons-compress-1.8.1.jar' to classloader
+2023-04-15 04:55:11.128 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/java-libpst-0.8.1.jar' to classloader
+2023-04-15 04:55:11.128 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/java-libpst-0.8.1.jar' to classloader
+2023-04-15 04:55:11.128 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/aspectjrt-1.8.0.jar' to classloader
+2023-04-15 04:55:11.128 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/aspectjrt-1.8.0.jar' to classloader
+2023-04-15 04:55:11.128 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+2023-04-15 04:55:11.128 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+2023-04-15 04:55:11.128 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/dist/solr-cell-5.5.0.jar' to classloader
+2023-04-15 04:55:11.129 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/dist/solr-cell-5.5.0.jar' to classloader
+2023-04-15 04:55:11.129 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/clustering/lib/simple-xml-2.7.1.jar' to classloader
+2023-04-15 04:55:11.129 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/clustering/lib/simple-xml-2.7.1.jar' to classloader
+2023-04-15 04:55:11.129 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/clustering/lib/carrot2-guava-18.0.jar' to classloader
+2023-04-15 04:55:11.129 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/clustering/lib/carrot2-guava-18.0.jar' to classloader
+2023-04-15 04:55:11.129 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/clustering/lib/jackson-annotations-2.5.4.jar' to classloader
+2023-04-15 04:55:11.129 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/clustering/lib/jackson-annotations-2.5.4.jar' to classloader
+2023-04-15 04:55:11.129 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/clustering/lib/carrot2-mini-3.10.4.jar' to classloader
+2023-04-15 04:55:11.129 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/clustering/lib/carrot2-mini-3.10.4.jar' to classloader
+2023-04-15 04:55:11.129 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/clustering/lib/attributes-binder-1.2.3.jar' to classloader
+2023-04-15 04:55:11.129 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/clustering/lib/attributes-binder-1.2.3.jar' to classloader
+2023-04-15 04:55:11.129 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/clustering/lib/jackson-databind-2.5.4.jar' to classloader
+2023-04-15 04:55:11.129 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/clustering/lib/jackson-databind-2.5.4.jar' to classloader
+2023-04-15 04:55:11.129 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+2023-04-15 04:55:11.129 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+2023-04-15 04:55:11.129 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+2023-04-15 04:55:11.129 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+2023-04-15 04:55:11.129 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/dist/solr-clustering-5.5.0.jar' to classloader
+2023-04-15 04:55:11.129 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/dist/solr-clustering-5.5.0.jar' to classloader
+2023-04-15 04:55:11.129 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+2023-04-15 04:55:11.130 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+2023-04-15 04:55:11.130 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+2023-04-15 04:55:11.130 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+2023-04-15 04:55:11.130 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/dist/solr-langid-5.5.0.jar' to classloader
+2023-04-15 04:55:11.130 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/dist/solr-langid-5.5.0.jar' to classloader
+2023-04-15 04:55:11.130 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+2023-04-15 04:55:11.130 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+2023-04-15 04:55:11.130 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/velocity/lib/commons-collections-3.2.2.jar' to classloader
+2023-04-15 04:55:11.130 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/velocity/lib/commons-collections-3.2.2.jar' to classloader
+2023-04-15 04:55:11.130 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/velocity/lib/velocity-1.7.jar' to classloader
+2023-04-15 04:55:11.130 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/velocity/lib/velocity-1.7.jar' to classloader
+2023-04-15 04:55:11.130 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+2023-04-15 04:55:11.130 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+2023-04-15 04:55:11.130 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/dist/solr-velocity-5.5.0.jar' to classloader
+2023-04-15 04:55:11.130 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/dist/solr-velocity-5.5.0.jar' to classloader
+2023-04-15 04:55:11.134 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@3270d194{HTTP/1.1}{0.0.0.0:8983}
+2023-04-15 04:55:11.134 INFO  (main) [   ] o.e.j.s.Server Started @780ms
+2023-04-15 04:55:11.257 WARN  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.Config Beginning with Solr 5.5, <maxMergeDocs> is deprecated, configure it on the relevant <mergePolicyFactory> instead.
+2023-04-15 04:55:11.257 WARN  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.Config Beginning with Solr 5.5, <maxMergeDocs> is deprecated, configure it on the relevant <mergePolicyFactory> instead.
+2023-04-15 04:55:11.257 WARN  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.Config Beginning with Solr 5.5, <mergeFactor> is deprecated, configure it on the relevant <mergePolicyFactory> instead.
+2023-04-15 04:55:11.257 WARN  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.Config Beginning with Solr 5.5, <maxMergeDocs> is deprecated, configure it on the relevant <mergePolicyFactory> instead.
+2023-04-15 04:55:11.258 WARN  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.Config Beginning with Solr 5.5, <mergeFactor> is deprecated, configure it on the relevant <mergePolicyFactory> instead.
+2023-04-15 04:55:11.257 WARN  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.Config Beginning with Solr 5.5, <mergeFactor> is deprecated, configure it on the relevant <mergePolicyFactory> instead.
+2023-04-15 04:55:11.266 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 5.5.0
+2023-04-15 04:55:11.266 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 5.5.0
+2023-04-15 04:55:11.266 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 5.5.0
+2023-04-15 04:55:11.355 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Loaded SolrConfig: solrconfig.xml
+2023-04-15 04:55:11.355 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Loaded SolrConfig: solrconfig.xml
+2023-04-15 04:55:11.357 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.SolrConfig Loaded SolrConfig: solrconfig.xml
+2023-04-15 04:55:11.399 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [newcore] Schema name=example-data-driven-schema
+2023-04-15 04:55:11.399 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema [thirdcore] Schema name=example-data-driven-schema
+2023-04-15 04:55:11.401 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.IndexSchema [second_core] Schema name=example-data-driven-schema
+2023-04-15 04:55:11.661 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema unique key field: id
+2023-04-15 04:55:11.662 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.IndexSchema unique key field: id
+2023-04-15 04:55:11.661 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema unique key field: id
+2023-04-15 04:55:11.675 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2023-04-15 04:55:11.675 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2023-04-15 04:55:11.679 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2023-04-15 04:55:11.679 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2023-04-15 04:55:11.752 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/home/adarsh/solr-5.5.0/server/solr/thirdcore'
+2023-04-15 04:55:11.752 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.CoreContainer Creating SolrCore 'thirdcore' using configuration from instancedir /home/adarsh/solr-5.5.0/server/solr/thirdcore
+2023-04-15 04:55:11.754 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/home/adarsh/solr-5.5.0/server/solr/newcore'
+2023-04-15 04:55:11.754 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'newcore' using configuration from instancedir /home/adarsh/solr-5.5.0/server/solr/newcore
+2023-04-15 04:55:11.763 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2023-04-15 04:55:11.763 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2023-04-15 04:55:11.771 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.c.SolrCore [[thirdcore] ] Opening new SolrCore at [/home/adarsh/solr-5.5.0/server/solr/thirdcore], dataDir=[/home/adarsh/solr-5.5.0/server/solr/thirdcore/data/]
+2023-04-15 04:55:11.771 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.c.SolrCore [[newcore] ] Opening new SolrCore at [/home/adarsh/solr-5.5.0/server/solr/newcore], dataDir=[/home/adarsh/solr-5.5.0/server/solr/newcore/data/]
+2023-04-15 04:55:11.772 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.c.JmxMonitoredMap No JMX servers found, not exposing Solr information with JMX.
+2023-04-15 04:55:11.772 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.c.JmxMonitoredMap No JMX servers found, not exposing Solr information with JMX.
+2023-04-15 04:55:11.773 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2023-04-15 04:55:11.774 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.c.SolrCore [[thirdcore] ] Added SolrEventListener for newSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2023-04-15 04:55:11.774 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.c.SolrCore [[newcore] ] Added SolrEventListener for newSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2023-04-15 04:55:11.774 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.c.SolrCore [[thirdcore] ] Added SolrEventListener for firstSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2023-04-15 04:55:11.775 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.c.SolrCore [[newcore] ] Added SolrEventListener for firstSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2023-04-15 04:55:11.776 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2023-04-15 04:55:11.777 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.c.SchemaCodecFactory Using default compressionMode: BEST_SPEED
+2023-04-15 04:55:11.777 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.c.SchemaCodecFactory Using default compressionMode: BEST_SPEED
+2023-04-15 04:55:11.782 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.c.CachingDirectoryFactory return new directory for /home/adarsh/solr-5.5.0/server/solr/thirdcore/data
+2023-04-15 04:55:11.782 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.c.CachingDirectoryFactory return new directory for /home/adarsh/solr-5.5.0/server/solr/newcore/data
+2023-04-15 04:55:11.783 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.c.SolrCore New index directory detected: old=null new=/home/adarsh/solr-5.5.0/server/solr/thirdcore/data/index/
+2023-04-15 04:55:11.783 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.c.SolrCore New index directory detected: old=null new=/home/adarsh/solr-5.5.0/server/solr/newcore/data/index/
+2023-04-15 04:55:11.783 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.c.CachingDirectoryFactory return new directory for /home/adarsh/solr-5.5.0/server/solr/thirdcore/data/index
+2023-04-15 04:55:11.783 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.c.CachingDirectoryFactory return new directory for /home/adarsh/solr-5.5.0/server/solr/newcore/data/index
+2023-04-15 04:55:11.792 INFO  (OldIndexDirectoryCleanupThreadForCore-thirdcore) [   x:thirdcore] o.a.s.c.SolrCore Looking for old index directories to cleanup for core thirdcore in /home/adarsh/solr-5.5.0/server/solr/thirdcore/data/
+2023-04-15 04:55:11.792 INFO  (OldIndexDirectoryCleanupThreadForCore-newcore) [   x:newcore] o.a.s.c.SolrCore Looking for old index directories to cleanup for core newcore in /home/adarsh/solr-5.5.0/server/solr/newcore/data/
+2023-04-15 04:55:11.794 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.c.PluginBag queryResponseWriter : 'velocity' created with startup=lazy 
+2023-04-15 04:55:11.794 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.c.PluginBag queryResponseWriter : 'velocity' created with startup=lazy 
+2023-04-15 04:55:11.795 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/home/adarsh/solr-5.5.0/server/solr/second_core'
+2023-04-15 04:55:11.795 INFO  (coreLoadExecutor-6-thread-3) [   ] o.a.s.c.CoreContainer Creating SolrCore 'second_core' using configuration from instancedir /home/adarsh/solr-5.5.0/server/solr/second_core
+2023-04-15 04:55:11.795 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2023-04-15 04:55:11.796 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.c.SolrCore [[second_core] ] Opening new SolrCore at [/home/adarsh/solr-5.5.0/server/solr/second_core], dataDir=[/home/adarsh/solr-5.5.0/server/solr/second_core/data/]
+2023-04-15 04:55:11.796 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.c.JmxMonitoredMap No JMX servers found, not exposing Solr information with JMX.
+2023-04-15 04:55:11.796 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.c.SolrCore [[second_core] ] Added SolrEventListener for newSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2023-04-15 04:55:11.796 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.c.SolrCore [[second_core] ] Added SolrEventListener for firstSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2023-04-15 04:55:11.796 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.c.SchemaCodecFactory Using default compressionMode: BEST_SPEED
+2023-04-15 04:55:11.796 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2023-04-15 04:55:11.796 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2023-04-15 04:55:11.796 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.c.CachingDirectoryFactory return new directory for /home/adarsh/solr-5.5.0/server/solr/second_core/data
+2023-04-15 04:55:11.797 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.c.SolrCore New index directory detected: old=null new=/home/adarsh/solr-5.5.0/server/solr/second_core/data/index/
+2023-04-15 04:55:11.797 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.c.CachingDirectoryFactory return new directory for /home/adarsh/solr-5.5.0/server/solr/second_core/data/index
+2023-04-15 04:55:11.797 INFO  (OldIndexDirectoryCleanupThreadForCore-second_core) [   x:second_core] o.a.s.c.SolrCore Looking for old index directories to cleanup for core second_core in /home/adarsh/solr-5.5.0/server/solr/second_core/data/
+2023-04-15 04:55:11.798 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.c.PluginBag queryResponseWriter : 'velocity' created with startup=lazy 
+2023-04-15 04:55:11.798 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2023-04-15 04:55:11.863 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.u.p.UpdateRequestProcessorChain creating updateRequestProcessorChain "add-unknown-fields-to-the-schema"
+2023-04-15 04:55:11.863 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.u.p.UpdateRequestProcessorChain creating updateRequestProcessorChain "add-unknown-fields-to-the-schema"
+2023-04-15 04:55:11.863 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.u.p.UpdateRequestProcessorChain creating updateRequestProcessorChain "add-unknown-fields-to-the-schema"
+2023-04-15 04:55:11.915 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2023-04-15 04:55:11.916 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2023-04-15 04:55:11.917 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2023-04-15 04:55:11.936 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2023-04-15 04:55:11.936 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2023-04-15 04:55:11.936 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2023-04-15 04:55:11.938 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2023-04-15 04:55:11.938 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2023-04-15 04:55:11.938 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2023-04-15 04:55:11.938 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2023-04-15 04:55:11.938 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2023-04-15 04:55:11.938 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2023-04-15 04:55:11.938 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2023-04-15 04:55:11.939 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2023-04-15 04:55:11.939 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2023-04-15 04:55:11.949 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.c.PluginBag requestHandler : '/update/extract' created with startup=lazy 
+2023-04-15 04:55:11.949 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2023-04-15 04:55:11.950 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2023-04-15 04:55:11.959 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.c.PluginBag requestHandler : '/spell' created with startup=lazy 
+2023-04-15 04:55:11.959 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.c.PluginBag requestHandler : '/tvrh' created with startup=lazy 
+2023-04-15 04:55:11.959 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.c.PluginBag requestHandler : '/update/extract' created with startup=lazy 
+2023-04-15 04:55:11.959 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2023-04-15 04:55:11.959 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.c.PluginBag requestHandler : '/elevate' created with startup=lazy 
+2023-04-15 04:55:11.959 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2023-04-15 04:55:11.959 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2023-04-15 04:55:11.959 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.c.PluginBag requestHandler : '/update/extract' created with startup=lazy 
+2023-04-15 04:55:11.960 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,/browse,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/elevate,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/spell,/update/csv,/tvrh,/select,/admin/segments,/admin/system,/replication,/config,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms,/update/extract
+2023-04-15 04:55:11.960 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.c.PluginBag requestHandler : '/spell' created with startup=lazy 
+2023-04-15 04:55:11.960 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2023-04-15 04:55:11.960 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.c.PluginBag requestHandler : '/tvrh' created with startup=lazy 
+2023-04-15 04:55:11.960 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2023-04-15 04:55:11.960 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2023-04-15 04:55:11.960 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.c.PluginBag requestHandler : '/elevate' created with startup=lazy 
+2023-04-15 04:55:11.960 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.c.PluginBag requestHandler : '/spell' created with startup=lazy 
+2023-04-15 04:55:11.960 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.c.PluginBag requestHandler : '/tvrh' created with startup=lazy 
+2023-04-15 04:55:11.960 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,/browse,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/elevate,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/spell,/update/csv,/tvrh,/select,/admin/segments,/admin/system,/replication,/config,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms,/update/extract
+2023-04-15 04:55:11.960 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2023-04-15 04:55:11.960 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.c.PluginBag requestHandler : '/elevate' created with startup=lazy 
+2023-04-15 04:55:11.960 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,/browse,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/elevate,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/spell,/update/csv,/tvrh,/select,/admin/segments,/admin/system,/replication,/config,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms,/update/extract
+2023-04-15 04:55:11.961 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2023-04-15 04:55:11.961 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2023-04-15 04:55:11.961 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2023-04-15 04:55:11.967 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2023-04-15 04:55:11.967 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2023-04-15 04:55:11.967 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2023-04-15 04:55:11.968 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2023-04-15 04:55:11.968 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2023-04-15 04:55:11.968 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2023-04-15 04:55:11.977 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2023-04-15 04:55:11.977 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2023-04-15 04:55:11.984 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2023-04-15 04:55:11.984 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2023-04-15 04:55:11.984 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2023-04-15 04:55:11.984 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2023-04-15 04:55:12.002 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/adarsh/solr-5.5.0/server/solr/thirdcore/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@50980e17; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+2023-04-15 04:55:12.002 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/adarsh/solr-5.5.0/server/solr/second_core/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@50980e17; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+2023-04-15 04:55:12.002 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/adarsh/solr-5.5.0/server/solr/newcore/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@50980e17; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_2,generation=2}
+2023-04-15 04:55:12.003 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.c.SolrDeletionPolicy newest commit generation = 1
+2023-04-15 04:55:12.003 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.c.SolrDeletionPolicy newest commit generation = 2
+2023-04-15 04:55:12.003 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.c.SolrDeletionPolicy newest commit generation = 1
+2023-04-15 04:55:12.013 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.s.SolrIndexSearcher Opening Searcher@5d95fd7a[thirdcore] main
+2023-04-15 04:55:12.013 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.s.SolrIndexSearcher Opening Searcher@7b1778ad[second_core] main
+2023-04-15 04:55:12.019 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/adarsh/solr-5.5.0/server/solr/second_core/conf
+2023-04-15 04:55:12.019 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/adarsh/solr-5.5.0/server/solr/thirdcore/conf
+2023-04-15 04:55:12.019 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=/home/adarsh/solr-5.5.0/server/solr/second_core/conf}
+2023-04-15 04:55:12.020 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=/home/adarsh/solr-5.5.0/server/solr/thirdcore/conf}
+2023-04-15 04:55:12.028 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=/home/adarsh/solr-5.5.0/server/solr/second_core/conf
+2023-04-15 04:55:12.028 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=/home/adarsh/solr-5.5.0/server/solr/thirdcore/conf
+2023-04-15 04:55:12.029 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2023-04-15 04:55:12.029 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2023-04-15 04:55:12.034 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2023-04-15 04:55:12.034 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2023-04-15 04:55:12.035 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.s.SolrIndexSearcher Opening Searcher@ae34199[newcore] main
+2023-04-15 04:55:12.035 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/adarsh/solr-5.5.0/server/solr/newcore/conf
+2023-04-15 04:55:12.035 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=/home/adarsh/solr-5.5.0/server/solr/newcore/conf}
+2023-04-15 04:55:12.035 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=/home/adarsh/solr-5.5.0/server/solr/newcore/conf
+2023-04-15 04:55:12.035 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2023-04-15 04:55:12.035 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2023-04-15 04:55:12.041 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2023-04-15 04:55:12.041 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2023-04-15 04:55:12.041 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2023-04-15 04:55:12.041 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2023-04-15 04:55:12.041 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2023-04-15 04:55:12.041 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2023-04-15 04:55:12.043 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /home/adarsh/solr-5.5.0/server/solr/second_core/conf/elevate.xml
+2023-04-15 04:55:12.043 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /home/adarsh/solr-5.5.0/server/solr/newcore/conf/elevate.xml
+2023-04-15 04:55:12.043 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /home/adarsh/solr-5.5.0/server/solr/thirdcore/conf/elevate.xml
+2023-04-15 04:55:12.056 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2023-04-15 04:55:12.056 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2023-04-15 04:55:12.056 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2023-04-15 04:55:12.056 INFO  (searcherExecutor-7-thread-1-processing-x:thirdcore) [   x:thirdcore] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@5d95fd7a[thirdcore] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2023-04-15 04:55:12.056 INFO  (searcherExecutor-8-thread-1-processing-x:newcore) [   x:newcore] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@ae34199[newcore] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(5.5.0):C32)))}
+2023-04-15 04:55:12.056 INFO  (searcherExecutor-8-thread-1-processing-x:newcore) [   x:newcore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2023-04-15 04:55:12.056 INFO  (searcherExecutor-9-thread-1-processing-x:second_core) [   x:second_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@7b1778ad[second_core] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2023-04-15 04:55:12.056 INFO  (searcherExecutor-9-thread-1-processing-x:second_core) [   x:second_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2023-04-15 04:55:12.056 INFO  (searcherExecutor-8-thread-1-processing-x:newcore) [   x:newcore] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2023-04-15 04:55:12.056 INFO  (searcherExecutor-7-thread-1-processing-x:thirdcore) [   x:thirdcore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2023-04-15 04:55:12.057 INFO  (searcherExecutor-7-thread-1-processing-x:thirdcore) [   x:thirdcore] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2023-04-15 04:55:12.057 INFO  (searcherExecutor-8-thread-1-processing-x:newcore) [   x:newcore] o.a.s.c.SolrCore [newcore] Registered new searcher Searcher@ae34199[newcore] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(5.5.0):C32)))}
+2023-04-15 04:55:12.056 INFO  (searcherExecutor-9-thread-1-processing-x:second_core) [   x:second_core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2023-04-15 04:55:12.057 INFO  (searcherExecutor-7-thread-1-processing-x:thirdcore) [   x:thirdcore] o.a.s.c.SolrCore [thirdcore] Registered new searcher Searcher@5d95fd7a[thirdcore] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2023-04-15 04:55:12.057 INFO  (searcherExecutor-9-thread-1-processing-x:second_core) [   x:second_core] o.a.s.c.SolrCore [second_core] Registered new searcher Searcher@7b1778ad[second_core] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2023-04-15 04:55:12.058 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+2023-04-15 04:55:12.058 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+2023-04-15 04:55:12.058 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+2023-04-15 04:55:12.059 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+2023-04-15 04:55:12.059 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.u.VersionInfo No terms found for _version_, cannot seed version bucket highest value from index
+2023-04-15 04:55:12.059 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1763216732516777984
+2023-04-15 04:55:12.059 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+2023-04-15 04:55:12.059 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+2023-04-15 04:55:12.059 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.u.VersionInfo No terms found for _version_, cannot seed version bucket highest value from index
+2023-04-15 04:55:12.066 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.u.UpdateLog Took 7.0ms to seed version buckets with highest version 1763216732516777984
+2023-04-15 04:55:12.066 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.u.UpdateLog Took 7.0ms to seed version buckets with highest version 1763212772009574400
+2023-04-15 04:55:12.067 INFO  (coreLoadExecutor-6-thread-3) [   x:second_core] o.a.s.c.CoreContainer registering core: second_core
+2023-04-15 04:55:12.067 INFO  (coreLoadExecutor-6-thread-2) [   x:thirdcore] o.a.s.c.CoreContainer registering core: thirdcore
+2023-04-15 04:55:12.067 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/home/adarsh/solr-5.5.0/server/solr/firstCore'
+2023-04-15 04:55:12.067 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2023-04-15 04:55:12.067 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /home/adarsh/solr-5.5.0/server/solr
+2023-04-15 04:55:12.067 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.u.VersionInfo Found MAX value 1763213759041503232 from Terms for _version_ in index
+2023-04-15 04:55:12.069 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.u.UpdateLog Took 10.0ms to seed version buckets with highest version 1763213759041503232
+2023-04-15 04:55:12.069 INFO  (coreLoadExecutor-6-thread-1) [   x:newcore] o.a.s.c.CoreContainer registering core: newcore
+2023-04-15 04:55:12.077 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig current version of requestparams : 0
+2023-04-15 04:55:12.078 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Adding specified lib dirs to ClassLoader
+2023-04-15 04:55:12.081 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/jmatio-1.0.jar' to classloader
+2023-04-15 04:55:12.081 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+2023-04-15 04:55:12.081 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+2023-04-15 04:55:12.081 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/jdom-1.0.jar' to classloader
+2023-04-15 04:55:12.081 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+2023-04-15 04:55:12.081 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+2023-04-15 04:55:12.081 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/tika-xmp-1.7.jar' to classloader
+2023-04-15 04:55:12.081 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/isoparser-1.0.2.jar' to classloader
+2023-04-15 04:55:12.081 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/icu4j-54.1.jar' to classloader
+2023-04-15 04:55:12.081 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+2023-04-15 04:55:12.081 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/vorbis-java-core-0.6.jar' to classloader
+2023-04-15 04:55:12.081 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/tika-core-1.7.jar' to classloader
+2023-04-15 04:55:12.081 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/rome-1.0.jar' to classloader
+2023-04-15 04:55:12.081 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+2023-04-15 04:55:12.081 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+2023-04-15 04:55:12.081 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/fontbox-1.8.8.jar' to classloader
+2023-04-15 04:55:12.081 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+2023-04-15 04:55:12.081 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/tika-java7-1.7.jar' to classloader
+2023-04-15 04:55:12.081 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+2023-04-15 04:55:12.081 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/xz-1.5.jar' to classloader
+2023-04-15 04:55:12.081 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/vorbis-java-tika-0.6.jar' to classloader
+2023-04-15 04:55:12.081 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/jempbox-1.8.8.jar' to classloader
+2023-04-15 04:55:12.081 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/tika-parsers-1.7.jar' to classloader
+2023-04-15 04:55:12.082 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/poi-ooxml-3.11.jar' to classloader
+2023-04-15 04:55:12.082 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+2023-04-15 04:55:12.082 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/poi-ooxml-schemas-3.11.jar' to classloader
+2023-04-15 04:55:12.082 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/pdfbox-1.8.8.jar' to classloader
+2023-04-15 04:55:12.082 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/poi-3.11.jar' to classloader
+2023-04-15 04:55:12.082 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/poi-scratchpad-3.11.jar' to classloader
+2023-04-15 04:55:12.082 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/commons-compress-1.8.1.jar' to classloader
+2023-04-15 04:55:12.082 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/java-libpst-0.8.1.jar' to classloader
+2023-04-15 04:55:12.082 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/aspectjrt-1.8.0.jar' to classloader
+2023-04-15 04:55:12.082 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+2023-04-15 04:55:12.082 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/dist/solr-cell-5.5.0.jar' to classloader
+2023-04-15 04:55:12.082 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/clustering/lib/simple-xml-2.7.1.jar' to classloader
+2023-04-15 04:55:12.082 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/clustering/lib/carrot2-guava-18.0.jar' to classloader
+2023-04-15 04:55:12.082 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/clustering/lib/jackson-annotations-2.5.4.jar' to classloader
+2023-04-15 04:55:12.082 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/clustering/lib/carrot2-mini-3.10.4.jar' to classloader
+2023-04-15 04:55:12.082 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/clustering/lib/attributes-binder-1.2.3.jar' to classloader
+2023-04-15 04:55:12.082 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/clustering/lib/jackson-databind-2.5.4.jar' to classloader
+2023-04-15 04:55:12.082 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+2023-04-15 04:55:12.082 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+2023-04-15 04:55:12.082 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/dist/solr-clustering-5.5.0.jar' to classloader
+2023-04-15 04:55:12.082 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+2023-04-15 04:55:12.082 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+2023-04-15 04:55:12.082 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/dist/solr-langid-5.5.0.jar' to classloader
+2023-04-15 04:55:12.082 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+2023-04-15 04:55:12.082 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/velocity/lib/commons-collections-3.2.2.jar' to classloader
+2023-04-15 04:55:12.082 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/velocity/lib/velocity-1.7.jar' to classloader
+2023-04-15 04:55:12.082 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+2023-04-15 04:55:12.082 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/adarsh/solr-5.5.0/dist/solr-velocity-5.5.0.jar' to classloader
+2023-04-15 04:55:12.099 WARN  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.Config Beginning with Solr 5.5, <maxMergeDocs> is deprecated, configure it on the relevant <mergePolicyFactory> instead.
+2023-04-15 04:55:12.100 WARN  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.Config Beginning with Solr 5.5, <mergeFactor> is deprecated, configure it on the relevant <mergePolicyFactory> instead.
+2023-04-15 04:55:12.101 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 5.5.0
+2023-04-15 04:55:12.116 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Loaded SolrConfig: solrconfig.xml
+2023-04-15 04:55:12.116 WARN  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.ManagedIndexSchemaFactory The schema has been upgraded to managed, but the non-managed schema schema.xml is still loadable.  PLEASE REMOVE THIS FILE.
+2023-04-15 04:55:12.122 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema [firstCore] Schema name=example-data-driven-schema
+2023-04-15 04:55:12.234 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema unique key field: id
+2023-04-15 04:55:12.254 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2023-04-15 04:55:12.255 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2023-04-15 04:55:12.273 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/home/adarsh/solr-5.5.0/server/solr/firstCore'
+2023-04-15 04:55:12.273 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.CoreContainer Creating SolrCore 'firstCore' using configuration from instancedir /home/adarsh/solr-5.5.0/server/solr/firstCore
+2023-04-15 04:55:12.273 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2023-04-15 04:55:12.273 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.c.SolrCore [[firstCore] ] Opening new SolrCore at [/home/adarsh/solr-5.5.0/server/solr/firstCore], dataDir=[/home/adarsh/solr-5.5.0/server/solr/firstCore/data/]
+2023-04-15 04:55:12.273 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.c.JmxMonitoredMap No JMX servers found, not exposing Solr information with JMX.
+2023-04-15 04:55:12.273 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.c.SolrCore [[firstCore] ] Added SolrEventListener for newSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2023-04-15 04:55:12.273 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.c.SolrCore [[firstCore] ] Added SolrEventListener for firstSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2023-04-15 04:55:12.273 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.c.SchemaCodecFactory Using default compressionMode: BEST_SPEED
+2023-04-15 04:55:12.274 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.c.CachingDirectoryFactory return new directory for /home/adarsh/solr-5.5.0/server/solr/firstCore/data
+2023-04-15 04:55:12.274 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.c.SolrCore New index directory detected: old=null new=/home/adarsh/solr-5.5.0/server/solr/firstCore/data/index/
+2023-04-15 04:55:12.274 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.c.CachingDirectoryFactory return new directory for /home/adarsh/solr-5.5.0/server/solr/firstCore/data/index
+2023-04-15 04:55:12.274 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.c.PluginBag queryResponseWriter : 'velocity' created with startup=lazy 
+2023-04-15 04:55:12.275 INFO  (OldIndexDirectoryCleanupThreadForCore-firstCore) [   x:firstCore] o.a.s.c.SolrCore Looking for old index directories to cleanup for core firstCore in /home/adarsh/solr-5.5.0/server/solr/firstCore/data/
+2023-04-15 04:55:12.275 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2023-04-15 04:55:12.276 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.u.p.UpdateRequestProcessorChain creating updateRequestProcessorChain "add-unknown-fields-to-the-schema"
+2023-04-15 04:55:12.276 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2023-04-15 04:55:12.277 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2023-04-15 04:55:12.278 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2023-04-15 04:55:12.279 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2023-04-15 04:55:12.279 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2023-04-15 04:55:12.280 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.c.PluginBag requestHandler : '/update/extract' created with startup=lazy 
+2023-04-15 04:55:12.280 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2023-04-15 04:55:12.280 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2023-04-15 04:55:12.280 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.c.PluginBag requestHandler : '/spell' created with startup=lazy 
+2023-04-15 04:55:12.280 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.c.PluginBag requestHandler : '/tvrh' created with startup=lazy 
+2023-04-15 04:55:12.280 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2023-04-15 04:55:12.280 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.c.PluginBag requestHandler : '/elevate' created with startup=lazy 
+2023-04-15 04:55:12.281 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,/browse,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/elevate,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/spell,/update/csv,/tvrh,/select,/admin/segments,/admin/system,/replication,/config,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms,/update/extract
+2023-04-15 04:55:12.282 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2023-04-15 04:55:12.282 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2023-04-15 04:55:12.282 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2023-04-15 04:55:12.282 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2023-04-15 04:55:12.282 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2023-04-15 04:55:12.283 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/adarsh/solr-5.5.0/server/solr/firstCore/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@50980e17; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+2023-04-15 04:55:12.283 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.c.SolrDeletionPolicy newest commit generation = 1
+2023-04-15 04:55:12.284 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.s.SolrIndexSearcher Opening Searcher@218b6cc2[firstCore] main
+2023-04-15 04:55:12.284 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/adarsh/solr-5.5.0/server/solr/firstCore/conf
+2023-04-15 04:55:12.284 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=/home/adarsh/solr-5.5.0/server/solr/firstCore/conf}
+2023-04-15 04:55:12.284 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=/home/adarsh/solr-5.5.0/server/solr/firstCore/conf
+2023-04-15 04:55:12.284 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2023-04-15 04:55:12.284 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2023-04-15 04:55:12.284 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2023-04-15 04:55:12.284 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2023-04-15 04:55:12.284 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /home/adarsh/solr-5.5.0/server/solr/firstCore/conf/elevate.xml
+2023-04-15 04:55:12.287 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2023-04-15 04:55:12.287 INFO  (searcherExecutor-22-thread-1-processing-x:firstCore) [   x:firstCore] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@218b6cc2[firstCore] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2023-04-15 04:55:12.287 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+2023-04-15 04:55:12.287 INFO  (searcherExecutor-22-thread-1-processing-x:firstCore) [   x:firstCore] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2023-04-15 04:55:12.287 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+2023-04-15 04:55:12.287 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.u.VersionInfo No terms found for _version_, cannot seed version bucket highest value from index
+2023-04-15 04:55:12.287 INFO  (searcherExecutor-22-thread-1-processing-x:firstCore) [   x:firstCore] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2023-04-15 04:55:12.287 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1763216732755853312
+2023-04-15 04:55:12.288 INFO  (searcherExecutor-22-thread-1-processing-x:firstCore) [   x:firstCore] o.a.s.c.SolrCore [firstCore] Registered new searcher Searcher@218b6cc2[firstCore] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2023-04-15 04:55:12.289 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.u.UpdateLog Took 1.0ms to seed version buckets with highest version 1763216732755853312
+2023-04-15 04:55:12.289 INFO  (coreLoadExecutor-6-thread-2) [   x:firstCore] o.a.s.c.CoreContainer registering core: firstCore
+2023-04-15 04:55:18.883 INFO  (qtp2096057945-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1681534518875} status=0 QTime=5
+2023-04-15 04:55:18.912 INFO  (qtp2096057945-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1681534518892} status=0 QTime=18
+2023-04-15 04:55:20.995 INFO  (qtp2096057945-15) [   x:thirdcore] o.a.s.c.S.Request [thirdcore]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1681534520975} hits=0 status=0 QTime=17
+2023-04-15 04:55:31.426 INFO  (qtp2096057945-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&since=0&_=1681534531422} status=0 QTime=1
+2023-04-15 04:55:41.445 INFO  (qtp2096057945-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&since=1681534512116&_=1681534541437} status=0 QTime=1
+2023-04-15 04:55:51.469 INFO  (qtp2096057945-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&since=1681534512116&_=1681534551461} status=0 QTime=0
+2023-04-15 04:56:01.489 INFO  (qtp2096057945-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&since=1681534512116&_=1681534561485} status=0 QTime=0
+2023-04-15 04:56:11.508 INFO  (qtp2096057945-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&since=1681534512116&_=1681534571501} status=0 QTime=0
+2023-04-15 04:56:21.520 INFO  (qtp2096057945-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&since=1681534512116&_=1681534581516} status=0 QTime=0
+2023-04-15 04:56:31.538 INFO  (qtp2096057945-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&since=1681534512116&_=1681534591533} status=0 QTime=0
+2023-04-15 04:56:41.556 INFO  (qtp2096057945-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&since=1681534512116&_=1681534601549} status=0 QTime=0
+2023-04-15 04:56:52.451 INFO  (qtp2096057945-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&since=1681534512116&_=1681534612445} status=0 QTime=0
+2023-04-15 04:57:03.451 INFO  (qtp2096057945-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&since=1681534512116&_=1681534623445} status=0 QTime=0
+2023-04-15 04:57:14.452 INFO  (qtp2096057945-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&since=1681534512116&_=1681534634445} status=0 QTime=0
+2023-04-15 04:57:25.452 INFO  (qtp2096057945-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&since=1681534512116&_=1681534645445} status=0 QTime=0
+2023-04-15 04:57:35.468 INFO  (qtp2096057945-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&since=1681534512116&_=1681534655461} status=0 QTime=0
+2023-04-15 04:57:40.537 ERROR (qtp2096057945-14) [   x:thirdcore] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-top.html [/home/adarsh/solr-5.5.0/server/solr/thirdcore/conf/admin-extra.menu-top.html]
+2023-04-15 04:57:40.540 INFO  (qtp2096057945-14) [   x:thirdcore] o.a.s.c.S.Request [thirdcore]  webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1681534660528} status=404 QTime=5
+2023-04-15 04:57:40.541 ERROR (qtp2096057945-21) [   x:thirdcore] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-bottom.html [/home/adarsh/solr-5.5.0/server/solr/thirdcore/conf/admin-extra.menu-bottom.html]
+2023-04-15 04:57:40.542 INFO  (qtp2096057945-21) [   x:thirdcore] o.a.s.c.S.Request [thirdcore]  webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1681534660530} status=404 QTime=1
+2023-04-15 04:57:40.556 INFO  (qtp2096057945-22) [   x:thirdcore] o.a.s.c.S.Request [thirdcore]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1681534660547} status=0 QTime=2
+2023-04-15 04:57:40.557 INFO  (qtp2096057945-15) [   x:thirdcore] o.a.s.c.S.Request [thirdcore]  webapp=/solr path=/replication params={wt=json&command=details&_=1681534660550} status=0 QTime=3
+2023-04-15 04:57:40.559 ERROR (qtp2096057945-14) [   x:thirdcore] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/home/adarsh/solr-5.5.0/server/solr/thirdcore/conf/admin-extra.html]
+2023-04-15 04:57:40.559 INFO  (qtp2096057945-14) [   x:thirdcore] o.a.s.c.S.Request [thirdcore]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1681534660552} status=404 QTime=0
+2023-04-15 04:57:40.560 INFO  (qtp2096057945-22) [   x:thirdcore] o.a.s.c.S.Request [thirdcore]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1681534660553} status=503 QTime=1
+2023-04-15 04:57:40.563 INFO  (qtp2096057945-16) [   x:thirdcore] o.a.s.c.S.Request [thirdcore]  webapp=/solr path=/admin/system params={wt=json&_=1681534660551} status=0 QTime=8
+2023-04-15 04:57:42.120 INFO  (qtp2096057945-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&since=0&_=1681534662116} status=0 QTime=0
+2023-04-15 04:57:52.140 INFO  (qtp2096057945-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&since=1681534660559&_=1681534672133} status=0 QTime=0
+2023-04-15 04:58:01.541 INFO  (qtp2096057945-15) [   x:thirdcore] o.a.s.c.S.Request [thirdcore]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1681534681536} status=0 QTime=0
+2023-04-15 04:58:01.543 INFO  (qtp2096057945-14) [   x:thirdcore] o.a.s.c.S.Request [thirdcore]  webapp=/solr path=/replication params={wt=json&command=details&_=1681534681539} status=0 QTime=1
+2023-04-15 04:58:01.545 ERROR (qtp2096057945-16) [   x:thirdcore] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/home/adarsh/solr-5.5.0/server/solr/thirdcore/conf/admin-extra.html]
+2023-04-15 04:58:01.545 INFO  (qtp2096057945-16) [   x:thirdcore] o.a.s.c.S.Request [thirdcore]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1681534681541} status=404 QTime=0
+2023-04-15 04:58:01.549 INFO  (qtp2096057945-21) [   x:thirdcore] o.a.s.c.S.Request [thirdcore]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1681534681542} status=503 QTime=0
+2023-04-15 04:58:01.552 INFO  (qtp2096057945-22) [   x:thirdcore] o.a.s.c.S.Request [thirdcore]  webapp=/solr path=/admin/system params={wt=json&_=1681534681540} status=0 QTime=9
+2023-04-15 04:58:06.559 INFO  (qtp2096057945-15) [   x:thirdcore] o.a.s.c.S.Request [thirdcore]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1681534686550} hits=0 status=0 QTime=1
+2023-04-15 04:58:10.039 INFO  (qtp2096057945-16) [   x:firstCore] o.a.s.c.S.Request [firstCore]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1681534690033} status=0 QTime=0
+2023-04-15 04:58:10.042 INFO  (qtp2096057945-21) [   x:firstCore] o.a.s.c.S.Request [firstCore]  webapp=/solr path=/replication params={wt=json&command=details&_=1681534690036} status=0 QTime=1
+2023-04-15 04:58:10.050 ERROR (qtp2096057945-15) [   x:firstCore] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/home/adarsh/solr-5.5.0/server/solr/firstCore/conf/admin-extra.html]
+2023-04-15 04:58:10.050 INFO  (qtp2096057945-14) [   x:firstCore] o.a.s.c.S.Request [firstCore]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1681534690042} status=503 QTime=0
+2023-04-15 04:58:10.050 INFO  (qtp2096057945-15) [   x:firstCore] o.a.s.c.S.Request [firstCore]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1681534690039} status=404 QTime=0
+2023-04-15 04:58:10.055 INFO  (qtp2096057945-22) [   x:firstCore] o.a.s.c.S.Request [firstCore]  webapp=/solr path=/admin/system params={wt=json&_=1681534690038} status=0 QTime=10
+2023-04-15 04:58:12.102 INFO  (qtp2096057945-21) [   x:second_core] o.a.s.c.S.Request [second_core]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1681534692092} status=0 QTime=0
+2023-04-15 04:58:12.104 INFO  (qtp2096057945-15) [   x:second_core] o.a.s.c.S.Request [second_core]  webapp=/solr path=/replication params={wt=json&command=details&_=1681534692097} status=0 QTime=0
+2023-04-15 04:58:12.111 ERROR (qtp2096057945-22) [   x:second_core] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/home/adarsh/solr-5.5.0/server/solr/second_core/conf/admin-extra.html]
+2023-04-15 04:58:12.111 INFO  (qtp2096057945-16) [   x:second_core] o.a.s.c.S.Request [second_core]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1681534692104} status=503 QTime=0
+2023-04-15 04:58:12.111 INFO  (qtp2096057945-22) [   x:second_core] o.a.s.c.S.Request [second_core]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1681534692102} status=404 QTime=0
+2023-04-15 04:58:12.115 INFO  (qtp2096057945-14) [   x:second_core] o.a.s.c.S.Request [second_core]  webapp=/solr path=/admin/system params={wt=json&_=1681534692100} status=0 QTime=8
+2023-04-15 04:58:36.147 INFO  (qtp2096057945-16) [   x:thirdcore] o.a.s.c.S.Request [thirdcore]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1681534716142} status=0 QTime=0
+2023-04-15 04:58:36.148 INFO  (qtp2096057945-14) [   x:thirdcore] o.a.s.c.S.Request [thirdcore]  webapp=/solr path=/replication params={wt=json&command=details&_=1681534716144} status=0 QTime=0
+2023-04-15 04:58:36.152 ERROR (qtp2096057945-22) [   x:thirdcore] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/home/adarsh/solr-5.5.0/server/solr/thirdcore/conf/admin-extra.html]
+2023-04-15 04:58:36.152 INFO  (qtp2096057945-15) [   x:thirdcore] o.a.s.c.S.Request [thirdcore]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1681534716148} status=503 QTime=0
+2023-04-15 04:58:36.152 INFO  (qtp2096057945-22) [   x:thirdcore] o.a.s.c.S.Request [thirdcore]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1681534716147} status=404 QTime=0
+2023-04-15 04:58:36.158 INFO  (qtp2096057945-21) [   x:thirdcore] o.a.s.c.S.Request [thirdcore]  webapp=/solr path=/admin/system params={wt=json&_=1681534716146} status=0 QTime=6
+2023-04-15 04:58:37.074 INFO  (qtp2096057945-16) [   x:thirdcore] o.a.s.c.S.Request [thirdcore]  webapp=/solr path=/admin/ping params={wt=json&ts=1681534717064&_=1681534717065} hits=0 status=0 QTime=3
+2023-04-15 04:58:37.075 INFO  (qtp2096057945-16) [   x:thirdcore] o.a.s.c.S.Request [thirdcore]  webapp=/solr path=/admin/ping params={wt=json&ts=1681534717064&_=1681534717065} status=0 QTime=4
+2023-04-15 04:58:39.729 INFO  (qtp2096057945-22) [   x:thirdcore] o.a.s.c.S.Request [thirdcore]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1681534719721} hits=0 status=0 QTime=1
+2023-04-15 04:58:40.621 INFO  (qtp2096057945-15) [   x:thirdcore] o.a.s.c.S.Request [thirdcore]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1681534720615} hits=0 status=0 QTime=1
+2023-04-15 04:58:47.354 INFO  (qtp2096057945-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&since=0&_=1681534727353} status=0 QTime=0
+2023-04-15 04:58:57.371 INFO  (qtp2096057945-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&since=1681534716152&_=1681534737365} status=0 QTime=0
+2023-04-15 04:59:07.387 INFO  (qtp2096057945-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&since=1681534716152&_=1681534747381} status=0 QTime=0
+2023-04-15 04:59:17.406 INFO  (qtp2096057945-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&since=1681534716152&_=1681534757398} status=0 QTime=0
+2023-04-15 04:59:18.273 INFO  (qtp2096057945-15) [   x:firstCore] o.a.s.c.S.Request [firstCore]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1681534758268} status=0 QTime=0
+2023-04-15 04:59:18.274 INFO  (qtp2096057945-21) [   x:firstCore] o.a.s.c.S.Request [firstCore]  webapp=/solr path=/replication params={wt=json&command=details&_=1681534758270} status=0 QTime=0
+2023-04-15 04:59:18.278 ERROR (qtp2096057945-14) [   x:firstCore] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/home/adarsh/solr-5.5.0/server/solr/firstCore/conf/admin-extra.html]
+2023-04-15 04:59:18.278 INFO  (qtp2096057945-14) [   x:firstCore] o.a.s.c.S.Request [firstCore]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1681534758273} status=404 QTime=0
+2023-04-15 04:59:18.278 INFO  (qtp2096057945-22) [   x:firstCore] o.a.s.c.S.Request [firstCore]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1681534758275} status=503 QTime=0
+2023-04-15 04:59:18.284 INFO  (qtp2096057945-16) [   x:firstCore] o.a.s.c.S.Request [firstCore]  webapp=/solr path=/admin/system params={wt=json&_=1681534758272} status=0 QTime=6
+2023-04-15 04:59:20.823 INFO  (qtp2096057945-21) [   x:firstCore] o.a.s.c.S.Request [firstCore]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1681534760814} hits=0 status=0 QTime=1
+2023-04-15 04:59:21.620 INFO  (qtp2096057945-14) [   x:firstCore] o.a.s.c.S.Request [firstCore]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1681534761618} hits=0 status=0 QTime=0
+2023-04-15 04:59:22.012 INFO  (qtp2096057945-22) [   x:firstCore] o.a.s.c.S.Request [firstCore]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1681534762010} hits=0 status=0 QTime=0
+2023-04-15 04:59:22.188 INFO  (qtp2096057945-16) [   x:firstCore] o.a.s.c.S.Request [firstCore]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1681534762181} hits=0 status=0 QTime=1
+2023-04-15 04:59:24.098 INFO  (qtp2096057945-21) [   x:second_core] o.a.s.c.S.Request [second_core]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1681534764094} status=0 QTime=0
+2023-04-15 04:59:24.100 INFO  (qtp2096057945-14) [   x:second_core] o.a.s.c.S.Request [second_core]  webapp=/solr path=/replication params={wt=json&command=details&_=1681534764096} status=0 QTime=0
+2023-04-15 04:59:24.103 ERROR (qtp2096057945-16) [   x:second_core] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/home/adarsh/solr-5.5.0/server/solr/second_core/conf/admin-extra.html]
+2023-04-15 04:59:24.104 INFO  (qtp2096057945-15) [   x:second_core] o.a.s.c.S.Request [second_core]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1681534764100} status=503 QTime=0
+2023-04-15 04:59:24.104 INFO  (qtp2096057945-16) [   x:second_core] o.a.s.c.S.Request [second_core]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1681534764099} status=404 QTime=0
+2023-04-15 04:59:24.108 INFO  (qtp2096057945-22) [   x:second_core] o.a.s.c.S.Request [second_core]  webapp=/solr path=/admin/system params={wt=json&_=1681534764097} status=0 QTime=6
+2023-04-15 04:59:26.457 INFO  (qtp2096057945-14) [   x:second_core] o.a.s.c.S.Request [second_core]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1681534766448} hits=0 status=0 QTime=1
+2023-04-15 04:59:26.912 INFO  (qtp2096057945-15) [   x:second_core] o.a.s.c.S.Request [second_core]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1681534766910} hits=0 status=0 QTime=0
+2023-04-15 04:59:49.506 INFO  (ShutdownMonitor) [   ] o.e.j.s.ServerConnector Stopped ServerConnector@3270d194{HTTP/1.1}{0.0.0.0:8983}
+2023-04-15 04:59:49.506 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=300031246
+2023-04-15 04:59:49.507 INFO  (coreCloseExecutor-27-thread-1) [   x:second_core] o.a.s.c.SolrCore [second_core]  CLOSING SolrCore org.apache.solr.core.SolrCore@58a2d0ff
+2023-04-15 04:59:49.507 INFO  (coreCloseExecutor-27-thread-1) [   x:second_core] o.a.s.u.DirectUpdateHandler2 closing DirectUpdateHandler2{commits=0,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0,transaction_logs_total_size=0,transaction_logs_total_number=0}
+2023-04-15 04:59:49.507 INFO  (coreCloseExecutor-27-thread-1) [   x:second_core] o.a.s.u.SolrCoreState Closing SolrCoreState
+2023-04-15 04:59:49.508 INFO  (coreCloseExecutor-27-thread-1) [   x:second_core] o.a.s.u.DefaultSolrCoreState SolrCoreState ref count has reached 0 - closing IndexWriter
+2023-04-15 04:59:49.508 INFO  (coreCloseExecutor-27-thread-1) [   x:second_core] o.a.s.u.DefaultSolrCoreState closing IndexWriter with IndexWriterCloser
+2023-04-15 04:59:49.512 INFO  (coreCloseExecutor-27-thread-1) [   x:second_core] o.a.s.c.SolrCore [second_core] Closing main searcher on request.
+2023-04-15 04:59:49.512 INFO  (coreCloseExecutor-27-thread-1) [   x:second_core] o.a.s.c.CachingDirectoryFactory Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+2023-04-15 04:59:49.513 INFO  (coreCloseExecutor-27-thread-1) [   x:second_core] o.a.s.c.CachingDirectoryFactory looking to close /home/adarsh/solr-5.5.0/server/solr/second_core/data [CachedDir<<refCount=0;path=/home/adarsh/solr-5.5.0/server/solr/second_core/data;done=false>>]
+2023-04-15 04:59:49.513 INFO  (coreCloseExecutor-27-thread-1) [   x:second_core] o.a.s.c.CachingDirectoryFactory Closing directory: /home/adarsh/solr-5.5.0/server/solr/second_core/data
+2023-04-15 04:59:49.513 INFO  (coreCloseExecutor-27-thread-1) [   x:second_core] o.a.s.c.CachingDirectoryFactory looking to close /home/adarsh/solr-5.5.0/server/solr/second_core/data/index [CachedDir<<refCount=0;path=/home/adarsh/solr-5.5.0/server/solr/second_core/data/index;done=false>>]
+2023-04-15 04:59:49.513 INFO  (coreCloseExecutor-27-thread-1) [   x:second_core] o.a.s.c.CachingDirectoryFactory Closing directory: /home/adarsh/solr-5.5.0/server/solr/second_core/data/index
+2023-04-15 04:59:49.513 INFO  (coreCloseExecutor-28-thread-1) [   x:thirdcore] o.a.s.c.SolrCore [thirdcore]  CLOSING SolrCore org.apache.solr.core.SolrCore@2ab510a4
+2023-04-15 04:59:49.513 INFO  (coreCloseExecutor-28-thread-1) [   x:thirdcore] o.a.s.u.DirectUpdateHandler2 closing DirectUpdateHandler2{commits=0,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0,transaction_logs_total_size=8581,transaction_logs_total_number=1}
+2023-04-15 04:59:49.513 INFO  (coreCloseExecutor-28-thread-1) [   x:thirdcore] o.a.s.u.SolrCoreState Closing SolrCoreState
+2023-04-15 04:59:49.513 INFO  (coreCloseExecutor-28-thread-1) [   x:thirdcore] o.a.s.u.DefaultSolrCoreState SolrCoreState ref count has reached 0 - closing IndexWriter
+2023-04-15 04:59:49.514 INFO  (coreCloseExecutor-28-thread-1) [   x:thirdcore] o.a.s.u.DefaultSolrCoreState closing IndexWriter with IndexWriterCloser
+2023-04-15 04:59:49.516 INFO  (coreCloseExecutor-28-thread-1) [   x:thirdcore] o.a.s.c.SolrCore [thirdcore] Closing main searcher on request.
+2023-04-15 04:59:49.516 INFO  (coreCloseExecutor-28-thread-1) [   x:thirdcore] o.a.s.c.CachingDirectoryFactory Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+2023-04-15 04:59:49.516 INFO  (coreCloseExecutor-28-thread-1) [   x:thirdcore] o.a.s.c.CachingDirectoryFactory looking to close /home/adarsh/solr-5.5.0/server/solr/thirdcore/data/index [CachedDir<<refCount=0;path=/home/adarsh/solr-5.5.0/server/solr/thirdcore/data/index;done=false>>]
+2023-04-15 04:59:49.516 INFO  (coreCloseExecutor-28-thread-1) [   x:thirdcore] o.a.s.c.CachingDirectoryFactory Closing directory: /home/adarsh/solr-5.5.0/server/solr/thirdcore/data/index
+2023-04-15 04:59:49.516 INFO  (coreCloseExecutor-28-thread-1) [   x:thirdcore] o.a.s.c.CachingDirectoryFactory looking to close /home/adarsh/solr-5.5.0/server/solr/thirdcore/data [CachedDir<<refCount=0;path=/home/adarsh/solr-5.5.0/server/solr/thirdcore/data;done=false>>]
+2023-04-15 04:59:49.516 INFO  (coreCloseExecutor-28-thread-1) [   x:thirdcore] o.a.s.c.CachingDirectoryFactory Closing directory: /home/adarsh/solr-5.5.0/server/solr/thirdcore/data
+2023-04-15 04:59:49.517 INFO  (coreCloseExecutor-29-thread-1) [   x:newcore] o.a.s.c.SolrCore [newcore]  CLOSING SolrCore org.apache.solr.core.SolrCore@16282e30
+2023-04-15 04:59:49.517 INFO  (coreCloseExecutor-29-thread-1) [   x:newcore] o.a.s.u.DirectUpdateHandler2 closing DirectUpdateHandler2{commits=0,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0,transaction_logs_total_size=8581,transaction_logs_total_number=1}
+2023-04-15 04:59:49.517 INFO  (coreCloseExecutor-29-thread-1) [   x:newcore] o.a.s.u.SolrCoreState Closing SolrCoreState
+2023-04-15 04:59:49.517 INFO  (coreCloseExecutor-29-thread-1) [   x:newcore] o.a.s.u.DefaultSolrCoreState SolrCoreState ref count has reached 0 - closing IndexWriter
+2023-04-15 04:59:49.517 INFO  (coreCloseExecutor-29-thread-1) [   x:newcore] o.a.s.u.DefaultSolrCoreState closing IndexWriter with IndexWriterCloser
+2023-04-15 04:59:49.519 INFO  (coreCloseExecutor-29-thread-1) [   x:newcore] o.a.s.c.SolrCore [newcore] Closing main searcher on request.
+2023-04-15 04:59:49.520 INFO  (coreCloseExecutor-29-thread-1) [   x:newcore] o.a.s.c.CachingDirectoryFactory Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+2023-04-15 04:59:49.520 INFO  (coreCloseExecutor-29-thread-1) [   x:newcore] o.a.s.c.CachingDirectoryFactory looking to close /home/adarsh/solr-5.5.0/server/solr/newcore/data/index [CachedDir<<refCount=0;path=/home/adarsh/solr-5.5.0/server/solr/newcore/data/index;done=false>>]
+2023-04-15 04:59:49.520 INFO  (coreCloseExecutor-29-thread-1) [   x:newcore] o.a.s.c.CachingDirectoryFactory Closing directory: /home/adarsh/solr-5.5.0/server/solr/newcore/data/index
+2023-04-15 04:59:49.520 INFO  (coreCloseExecutor-29-thread-1) [   x:newcore] o.a.s.c.CachingDirectoryFactory looking to close /home/adarsh/solr-5.5.0/server/solr/newcore/data [CachedDir<<refCount=0;path=/home/adarsh/solr-5.5.0/server/solr/newcore/data;done=false>>]
+2023-04-15 04:59:49.520 INFO  (coreCloseExecutor-29-thread-1) [   x:newcore] o.a.s.c.CachingDirectoryFactory Closing directory: /home/adarsh/solr-5.5.0/server/solr/newcore/data
+2023-04-15 04:59:49.520 INFO  (coreCloseExecutor-30-thread-1) [   x:firstCore] o.a.s.c.SolrCore [firstCore]  CLOSING SolrCore org.apache.solr.core.SolrCore@219ed1ee
+2023-04-15 04:59:49.520 INFO  (coreCloseExecutor-30-thread-1) [   x:firstCore] o.a.s.u.DirectUpdateHandler2 closing DirectUpdateHandler2{commits=0,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0,transaction_logs_total_size=0,transaction_logs_total_number=0}
+2023-04-15 04:59:49.520 INFO  (coreCloseExecutor-30-thread-1) [   x:firstCore] o.a.s.u.SolrCoreState Closing SolrCoreState
+2023-04-15 04:59:49.520 INFO  (coreCloseExecutor-30-thread-1) [   x:firstCore] o.a.s.u.DefaultSolrCoreState SolrCoreState ref count has reached 0 - closing IndexWriter
+2023-04-15 04:59:49.520 INFO  (coreCloseExecutor-30-thread-1) [   x:firstCore] o.a.s.u.DefaultSolrCoreState closing IndexWriter with IndexWriterCloser
+2023-04-15 04:59:49.521 ERROR (coreCloseExecutor-30-thread-1) [   x:firstCore] o.a.s.u.SolrIndexWriter Error closing IndexWriter
+java.nio.file.NoSuchFileException: /home/adarsh/solr-5.5.0/server/solr/firstCore/data/index
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixPath.toRealPath(UnixPath.java:837)
+	at org.apache.lucene.util.IOUtils.spins(IOUtils.java:440)
+	at org.apache.lucene.util.IOUtils.spins(IOUtils.java:423)
+	at org.apache.lucene.index.ConcurrentMergeScheduler.initDynamicDefaults(ConcurrentMergeScheduler.java:376)
+	at org.apache.lucene.index.ConcurrentMergeScheduler.merge(ConcurrentMergeScheduler.java:464)
+	at org.apache.lucene.index.IndexWriter.waitForMerges(IndexWriter.java:2294)
+	at org.apache.lucene.index.IndexWriter.shutdown(IndexWriter.java:1081)
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1125)
+	at org.apache.solr.update.SolrIndexWriter.close(SolrIndexWriter.java:130)
+	at org.apache.solr.update.DirectUpdateHandler2.closeWriter(DirectUpdateHandler2.java:832)
+	at org.apache.solr.update.DefaultSolrCoreState.closeIndexWriter(DefaultSolrCoreState.java:85)
+	at org.apache.solr.update.DefaultSolrCoreState.close(DefaultSolrCoreState.java:358)
+	at org.apache.solr.update.SolrCoreState.decrefSolrCoreState(SolrCoreState.java:73)
+	at org.apache.solr.core.SolrCore.close(SolrCore.java:1225)
+	at org.apache.solr.core.SolrCores$2.call(SolrCores.java:134)
+	at org.apache.solr.core.SolrCores$2.call(SolrCores.java:129)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor$1.run(ExecutorUtil.java:231)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+2023-04-15 04:59:49.522 INFO  (coreCloseExecutor-30-thread-1) [   x:firstCore] o.a.s.c.SolrCore [firstCore] Closing main searcher on request.
+2023-04-15 04:59:49.522 INFO  (coreCloseExecutor-30-thread-1) [   x:firstCore] o.a.s.c.CachingDirectoryFactory Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+2023-04-15 04:59:49.522 INFO  (coreCloseExecutor-30-thread-1) [   x:firstCore] o.a.s.c.CachingDirectoryFactory looking to close /home/adarsh/solr-5.5.0/server/solr/firstCore/data/index [CachedDir<<refCount=0;path=/home/adarsh/solr-5.5.0/server/solr/firstCore/data/index;done=false>>]
+2023-04-15 04:59:49.522 INFO  (coreCloseExecutor-30-thread-1) [   x:firstCore] o.a.s.c.CachingDirectoryFactory Closing directory: /home/adarsh/solr-5.5.0/server/solr/firstCore/data/index
+2023-04-15 04:59:49.522 INFO  (coreCloseExecutor-30-thread-1) [   x:firstCore] o.a.s.c.CachingDirectoryFactory looking to close /home/adarsh/solr-5.5.0/server/solr/firstCore/data [CachedDir<<refCount=0;path=/home/adarsh/solr-5.5.0/server/solr/firstCore/data;done=false>>]
+2023-04-15 04:59:49.522 INFO  (coreCloseExecutor-30-thread-1) [   x:firstCore] o.a.s.c.CachingDirectoryFactory Closing directory: /home/adarsh/solr-5.5.0/server/solr/firstCore/data
+2023-04-15 04:59:49.524 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@1794d431{/solr,file:/home/adarsh/solr-5.5.0/server/solr-webapp/webapp/,UNAVAILABLE}{/home/adarsh/solr-5.5.0/server/solr-webapp/webapp}

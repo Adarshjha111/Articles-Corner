@@ -1,0 +1,77 @@
+#start with our base image (the foundation) - version 8.1.2
+FROM php:8.1.2-apache
+
+RUN apt-get update -y
+# Install underlying dependencies
+# gd requres: libpng-dev, zlib1g-dev
+#libicu-dev :- provides globalization support for software applications.
+RUN apt-get install -y \
+    libicu-dev \
+    libpng-dev \
+    unzip \
+    zip \
+    zlib1g-dev
+
+# install all PHP dependencies
+#gd :- to create and manipulate images 
+RUN docker-php-ext-install \  
+    mysqli \
+    pdo pdo_mysql\
+    intl
+    
+#install composer
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin/ --filename=composer
+ENV COMPOSER_ALLOW_SUPERUSER=1
+
+#set our application folder as an environment variable
+ENV cake_blog /var/www/html
+
+#change uid and gid of apache to docker user uid/gid
+RUN usermod -u 1000 www-data && groupmod -g 1000 www-data
+
+#change the web_root to cakephp /var/www/html/webroot folder
+#The default web root directory for Apache on Ubuntu is "/var/www/html". However, a CakePHP application expects its web root to be located in the "/var/www/html/webroot" directory. 
+RUN sed -i -e "s/html/html\/webroot/g" /etc/apache2/sites-enabled/000-default.conf
+
+# enable apache module rewrite
+RUN a2enmod rewrite
+
+#copy source files and run composer
+COPY . $cake_blog
+
+#copy source files and run composer
+#installs the necessary packages and dependencies listed in the "composer.json" file
+#COPY composer.json $cake_blog
+
+# install all PHP dependencies
+RUN composer install
+
+
+#change ownership of our applications
+#By changing the ownership of this directory to "www-data:www-data", the web server running inside the Docker container (which is typically configured to run as the "www-data" user and group) will have the necessary permissions to read and write files in this directory.
+RUN chown -R www-data:www-data $cake_blog
+
+# Install Solarium
+RUN composer require --ignore-platform-reqs solarium/solarium
+RUN composer require symfony/event-dispatcher
+
+
+RUN apt-get update && \
+    apt-get install -y curl 
+COPY docker-php-ext-curl.ini /usr/local/etc/php/conf.d/
+
+#Autoloader files are responsible for automatically loading the correct PHP classes when they are referenced in the project's code.
+RUN composer dump-autoload
+
+   
+# COPY docker-php-ext-curl.ini /usr/local/etc/php/conf.d/docker-php-ext-curl.ini
+# RUN docker-php-ext-enable curl
+    
+#starting the Apache web server process inside a Docker container and ensuring that it runs in the foreground so that you can see its output.
+CMD apachectl -D FOREGROUND
+
+#had to run these two commands manually 
+#1. docker exec cake_dockerised_final_cakephp_1 composer require symfony/event-dispatcher
+#2. go inside cakephp docker container and then :- apt-get update && apt-get install -y curl
+
+#docker exec -it solr_container post -c solr_cakephp example/fixed_articles.xml - > to post data to solr

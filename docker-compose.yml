@@ -1,0 +1,58 @@
+version: '3.8'
+services:
+  mydb:
+    container_name: mydb
+    image: mysql:8.0.32
+    volumes:
+      - ./sql_data:/var/lib/mysql
+    environment:
+       - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+       - MYSQL_DATABASE=${MYSQL_DATABASE}
+    ports:
+       - "${DB_PORT_one}:${DB_PORT_two}"
+    
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+          - "${PMA_PORT_one}:${PMA_PORT_two}"
+    restart: always
+    environment:
+        PMA_HOST: ${PMA_HOST}
+    depends_on:
+        - mydb
+
+  cakephp:
+    # we want to use the image which is build from our Dockerfile
+    build:
+        context: .
+        dockerfile: Dockerfile_X
+    # apache is running on port 80 but we want to expose this to port 4000 on our local machine
+    ports:
+            - "${CAKEPHP_PORT_one}:${CAKEPHP_PORT_two}"         
+    # we are depending on the mysql backend
+    depends_on:
+      - mydb
+      - solr_container
+    # we mount the working dir into the container, handy for development 
+    volumes:
+      - .:/var/www/html/
+    environment:
+      - SECURITY_SALT=${SECURITY_SALT}
+      - MYSQL_URL=${MYSQL_URL}
+      - MYSQL_USERNAME=${MYSQL_USERNAME}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+
+  solr_container:
+    container_name: solr_container
+    build: .
+    ports:
+     - "8983:8983"
+    volumes:
+      - data_two:/opt/solr
+    
+volumes:
+  data_two:
+   
+
+
+  
